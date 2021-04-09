@@ -1,0 +1,91 @@
+body{
+	font-family: 'Noto Sans JP', sans-serif;
+	position: relative;
+	margin: 0;
+}
+
+.container{
+	max-width: 1120px;
+	margin: 0 auto;
+}
+
+@import 'variables';
+@import 'buttons';
+@import 'blocks/header';
+@import 'blocks/promo';
+
+.logo{
+	width: 195px;
+	height: 49px;
+	img{
+		width: 100%;
+	}
+}
+
+a{
+	color: #000;
+	&:hover{
+		text-decoration: none;
+		color: $main-color;
+	}
+}
+
+.menu{
+	&__list{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	&__item{
+		padding: 0 15px;
+		font-size: 1em;
+		a{
+			color: $text-grey;
+			text-decoration: none;
+			&:hover{
+				color: $main-color;
+			}
+		}
+	}
+}
+.phone{
+	color: $text-color;
+	text-decoration: none;
+	font-size: 1.308em;
+	line-height: 24px;
+}
+@media (max-width: 1159px){
+	.container{
+		max-width: 900px;
+	}
+	.menu{
+		&__item{
+			padding: 0 5px;
+		}
+	}
+}
+@media (max-width: 991px){
+	.container{
+		max-width: 700px;
+	}
+	.logo{
+		width: 175px;
+		height: 51px;
+		img{
+			width: 100%;
+		}
+	}
+}
+@media (max-width: 768px){
+	.container{
+		max-width: 540px;
+	}
+}
+@media (max-width: 576px){
+	.container{
+		max-width: auto;
+	}
+}

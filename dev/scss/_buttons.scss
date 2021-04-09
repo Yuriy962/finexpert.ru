@@ -1,0 +1,19 @@
+.btn{
+    width: 220px;
+    height: 62px;
+    border-radius: 5px;
+    border: none;
+    font-size: 11px;
+    background-color: $main-color;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    &:hover{
+        background-color: $btn-hover;
+        cursor: pointer;
+    }
+    &-callback{
+        width: 138px;
+        height: 41px;
+    }
+}
