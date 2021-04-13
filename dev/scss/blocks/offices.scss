@@ -1,0 +1,30 @@
+.offices{
+    &__wrapper{
+        padding: 25px 0 70px;
+    }
+    &__sidebar{
+        position: absolute;
+        top: 40px;
+        right: 25px;
+        z-index: 1;
+        overflow-y: scroll;
+        background-color: #fff;
+        max-height: 493px;
+    }
+}
+.map{
+    margin-top: 50px;
+    width: 100%;
+    min-height: 571.88px;
+    position: relative;
+}
+
+.cities{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.city{
+    padding: 25px 30px;
+    border-bottom: 1px solid #DCDCDC;
+}
