@@ -9,6 +9,9 @@
     color: #fff;
     text-transform: uppercase;
     text-align: center;
+    margin-top: 25px;
+    position: relative;
+    z-index: 1;
     &:hover, &:focus{
         background-color: $btn-hover;
         cursor: pointer;
@@ -17,6 +20,7 @@
         width: 138px;
         height: 41px;
         font-size: 11px;
+        margin: 0;
     }
 }
 @media (max-width: 767px){

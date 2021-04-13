@@ -11,8 +11,10 @@ body{
 
 @import 'variables';
 @import 'buttons';
+@import 'colors';
 @import 'blocks/header';
 @import 'blocks/promo';
+@import 'blocks/join';
 
 .logo{
 	width: 195px;
@@ -176,7 +178,7 @@ a{
 	}
 	.menu{
 		&-active{
-            top: 120px;
+            top: 115px;
         }
 	}
 	.title{
@@ -199,5 +201,99 @@ a{
 	.container {
 		width: auto;
 		padding: 0 16px;
+	}
+	.title{
+		&-main{
+			margin-bottom: 10px;
+		}
+	}
+	.subtitle{
+		&-main{
+			margin-bottom: 16px;
+		}
+	}
+}
+
+
+p{
+	font-size: 15px;  
+	margin-top: 0;
+	margin-bottom: 12px;
+}
+a{
+	display: block;
+}
+ul{
+	padding: 0 20px;
+	margin-top: 25px;
+	li{
+		margin-bottom: 20px;
+		line-height: 28px;
+		&::marker{
+			color: $main-color;
+		}
+	}
+}
+
+.list{
+	display: flex;
+	justify-content: space-between;
+	margin: 50px -15px 75px;
+}
+.item{
+    display: flex;
+	flex: 0 0 calc(25% - 30px);
+    padding: 0 15px;
+    color: $text-color;
+    &__wrapper{
+		border-radius: 7px;
+		position: relative;
+		overflow: hidden;
+		border: 1px solid #CFD7E4;
+		padding: 35px 30px;
+    }
+    &__title{
+        font-size: 20px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+	p{
+		font-size: 15px;  
+	}
+    &-big{
+		flex: 0 0 calc(50% - 30px);
+		&__wrapper{
+			padding: 45px 50px 60px 50px;
+			border: none;
+		}
+        &__title{
+			font-size: 28px;
+			margin-bottom: 20px;
+        }
+		&__img{
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+		p{
+			font-size: 16px; 
+		}
+    }
+}
+@media (max-width: 992px){
+	.list{
+		flex-direction: column;
+	}
+	.list-small{
+		overflow-x: scroll;
+		flex-direction: row !important;
+		.item{
+			flex: 0 0 257px;
+		}
+	}
+	.item{
+		&-big{
+			height: 486px;
+		}
 	}
 }
