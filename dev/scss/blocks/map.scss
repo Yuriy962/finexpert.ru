@@ -159,10 +159,14 @@
     color: $text-color;
     display: flex;
     align-items: center;
+    cursor: pointer;
     &__name{
         font-size: 1em;
         font-weight: 600;
         white-space: nowrap;
+    }
+    &-active, &:hover, &:active, &:focus{
+        color: $main-color;
     }
 }
 .dot{

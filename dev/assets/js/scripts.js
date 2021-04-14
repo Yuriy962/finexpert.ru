@@ -28,3 +28,7 @@ if($(window).width() < 1161){
         }
     });
 }
+
+$(".city").click(function () {
+    $(this).toggleClass('city-active');
+});
