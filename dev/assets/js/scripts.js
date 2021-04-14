@@ -18,3 +18,13 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     });
 });
+
+if($(window).width() < 1161){
+    $(".cities__item").click(function() { 
+        $(this).toggleClass('cities__item-active');
+    
+        if($(this).find('.cities__wrapper').text() !== ''){//Если текст есть
+            $(this).find('.cities__wrapper').slideToggle();// плавно спускаем вниз текст ответа на вопрос
+        }
+    });
+}
