@@ -1,7 +1,10 @@
 .support{
     background-color: #F3F5F8;
     &__wrapper{
-        padding: 60px 0 45px;
+        padding: 30px 0 5px;
+    }
+    &__subtitle{
+        margin-bottom: 40px;
     }
     &__list{
         display: flex;
@@ -39,8 +42,7 @@
                 justify-content: flex-start;
             }
             &-big{
-                min-height: 0;
-                height: auto;
+                min-height: 0 !important;
             }
         }
     }

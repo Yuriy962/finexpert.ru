@@ -7,27 +7,10 @@
         top: 40px;
         right: 25px;
         z-index: 1;
-        overflow-y: scroll;
         background-color: #fff;
         max-height: 493px;
         width: 326px;
         border-radius: 7px;
-        /* &::-webkit-scrollbar-button{
-            background-color: $main-color;
-            border-radius: 8px;
-        } */
-        &::-webkit-scrollbar{
-            width: 5px;
-        }
-        
-        &::-webkit-scrollbar-thumb{
-            background-color: $main-color;
-            border-radius: 8px;
-        }
-        
-        &::-webkit-scrollbar-thumb:hover{
-            border-width: 1px 1px 1px 2px;
-        }
     }
 }
 .map{
@@ -68,6 +51,20 @@
         margin: 0;
         color: $text-color;
         font-size: 15px;
+        overflow-y: auto;
+        max-height: 493px;
+        &::-webkit-scrollbar{
+            width: 5px;
+        }
+        
+        &::-webkit-scrollbar-thumb{
+            background-color: $main-color;
+            border-radius: 8px;
+        }
+        
+        &::-webkit-scrollbar-thumb:hover{
+            border-width: 1px 1px 1px 2px;
+        }
     }
     &__item{
         padding: 10px 30px;
@@ -76,6 +73,11 @@
         transition: 0.5s all;
         &:last-child{
             border-bottom: 0;
+        }
+        &-active{
+            .cities__title{
+                color: $main-color;
+            }
         }
     }
     &__title{
@@ -115,6 +117,9 @@
                 transition: all .5s;
             }
             &-active{
+                .cities__title{
+                    color: initial;
+                }
                 &::after{
                     right: 20px;
                     top: 23px;
