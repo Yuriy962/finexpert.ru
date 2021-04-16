@@ -103,6 +103,9 @@
             background-color: #F3F5F8;
             border-radius: 7px;
         }
+        &__list{
+            max-height: initial;
+        }
         &__item{
             position: relative;
             padding: 15px 20px 20px;

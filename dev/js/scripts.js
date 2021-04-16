@@ -53,6 +53,7 @@ $(document).ready(function () {
         // } else {
             $(this).toggleClass('city-active');
             for(let i = 0; i < cities.length; i++){
+                console.log($("#" + cities[i].getAttribute('id')).position());
                 if(cities[i].getAttribute('id') == placemark){
                     console.log(cities[i].getAttribute('id') + ' == ' + placemark);
                     $(citiesList).animate({
