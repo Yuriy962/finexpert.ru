@@ -1,4 +1,10 @@
+@function max($numbers...) {
+	@return m#{a}x(#{$numbers});
+}
 
+@function min($numbers...) {
+	@return m#{i}n(#{$numbers});
+}
 
 body{
 	font-family: 'Noto Sans JP', sans-serif;
@@ -21,6 +27,7 @@ body.compensate-for-scrollbar {
 @import 'variables';
 @import 'buttons';
 @import 'colors';
+@import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox';
 @import 'blocks/header';
 @import 'blocks/promo';
 @import 'blocks/join';
